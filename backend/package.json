@@ -5,7 +5,7 @@
   "main": "src/server.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf build && tsc",
+    "build": "rimraf build && tsc && node build/server.js",
     "start": "node build/server.js",
     "dev": "nodemon src/server.ts"
   },
@@ -19,7 +19,8 @@
     "express": "^4.19.2",
     "joi": "^17.12.3",
     "mysql2": "^3.9.4",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "rimraf": "^5.0.5"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
