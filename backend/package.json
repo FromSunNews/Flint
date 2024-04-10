@@ -5,7 +5,7 @@
   "main": "src/server.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf build && tsc && node build/server.js",
+    "build": "rimraf build && tsc",
     "start": "node build/server.js",
     "dev": "nodemon src/server.ts"
   },
